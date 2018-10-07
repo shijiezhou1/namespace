@@ -9,7 +9,6 @@ new jay\Form\footer();
 
 
 // NAMESPACE
-
 // echo jay\DOG;
 
 ?>
