@@ -17,6 +17,8 @@ var denom = [
   
     // Transform CID array into drawer object
     var register = cid.reduce(function(acc, curr) {
+      console.log(acc);
+      console.log(curr);
       acc.total += curr[1];
       acc[curr[0]] = curr[1];
       return acc;
@@ -65,8 +67,8 @@ var denom = [
     // Here is your change, ma'am.
     output.status = 'OPEN';
     output.change = change_arr;
-    return output;
+    // return output;
   }
   
   // test here
-  console.log(checkCashRegister(19.50, 20.00, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]]));
+  console.log(checkCashRegister(19.10, 20.00, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.10], ["QUARTER", 4.25], ["ONE", 90.00], ["FIVE", 55.00], ["TEN", 20.00], ["TWENTY", 60.00], ["ONE HUNDRED", 100.00]]));
